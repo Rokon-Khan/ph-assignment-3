@@ -38,7 +38,7 @@
               text_gray_1: "rgba(73, 73, 73, 1)",
               text_gray_2: "rgba(115, 115, 115, 1)",
               body: "rgb(255, 255, 255)",
-              body_white: "rgb(255, 255, 255, 0)",
+              body_white: "rgba(255, 255, 255, 0)",
               body_neutral: "rgba(30, 30, 30, 1)",
               body_neutral_2: "rgba(28, 28, 28, 1)",
               accent_1: "rgba(231, 193, 211, 1)",
@@ -56,39 +56,11 @@
   </head>
   <body class="font-Manrope">
     <!-- header section -->
-    <header class="bg-gradient-to-b from-body_white to-white">
+    <header class="bg-[#f7f7f7] w-full">
       <!-- Navbar Section Start -->
-      <nav class="navbar w-11/12 mx-auto">
-        <div class="navbar">
+      <nav class="navbar lg:w-11/12 mx-auto">
+        <div class="navbar justify-between">
           <div class="navbar-start">
-            <div class="dropdown">
-              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-5 w-5"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M4 6h16M4 12h8m-8 6h16"
-                  />
-                </svg>
-              </div>
-              <ul
-                tabindex="0"
-                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
-              >
-                <li><a>Home</a></li>
-                <li><a>Services</a></li>
-                <li><a>Portfolio</a></li>
-                <li><a>Blogs</a></li>
-                <li><a>Contact us</a></li>
-              </ul>
-            </div>
             <div class="flex justify-center items-center gap-1">
               <i
                 class="fa-solid fa-arrow-right-long bg-primary rounded-full p-1 -rotate-45"
@@ -105,45 +77,115 @@
               <li><a>Contact us</a></li>
             </ul>
           </div>
-          <div class="navbar-end flex gap-2">
+          <div class="navbar-end lg:flex gap-2 hidden">
             <i
-              class="fa-solid fa-magnifying-glass text-xl bg-zinc-200 p-2 rounded-full"
+              class="fa-solid fa-magnifying-glass text-lg text-text_secondary bg-white px-2 py-1 rounded-full"
             ></i>
             <i
-              class="fa-solid fa-cart-shopping text-xl bg-white p-2 rounded-full"
+              class="fa-solid fa-cart-shopping text-lg text-text_secondary bg-white px-2 py-1 rounded-full"
             ></i>
-            <div
-              class="btn bg-primary text-lg text-text_secondary rounded-full font-extrabold"
-            >
-              <a> Book Consult </a>
-              <i
-                class="fa-solid fa-arrow-right-long bg-body_neutral_2 text-white rounded-full p-1 -rotate-45"
-              ></i>
+            <div>
+              <a
+                class="btn bg-primary text-lg text-text_secondary rounded-full font-extrabold"
+                ><span>Book Consult</span>
+                <i
+                  class="fa-solid fa-arrow-right-long bg-body_neutral_2 text-white rounded-full p-1 -rotate-45"
+                ></i>
+              </a>
             </div>
+          </div>
+          <div class="dropdown">
+            <div
+              tabindex="0"
+              role="button"
+              class="btn btn-ghos lg:hidden rounded-full bg-white text-2xl"
+            >
+              <i class="fa-solid fa-bars"></i>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+            >
+              <li><a>Home</a></li>
+              <li><a>Services</a></li>
+              <li><a>Portfolio</a></li>
+              <li><a>Blogs</a></li>
+              <li><a>Contact us</a></li>
+            </ul>
           </div>
         </div>
       </nav>
       <!-- Banner Section  -->
-      <div class="flex justify-center flex-col space-y-6">
-        <div class="w-[571px] h-[350px] mx-auto">
+      <div class="flex justify-center items-center flex-col space-y-6">
+        <div class="w-11/12 lg:w-[571px] lg:h-[350px] mx-auto">
           <img class="w-full" src="./assets/banner.png" alt="" />
         </div>
         <h1
-          class="text-text_primary text-6xl font-extrabold w-3/4 text-center mx-auto"
+          class="text-text_primary text-3xl lg:text-6xl md:text-4xl font-extrabold w-3/4 text-center mx-auto"
         >
           A barn house of this design has a striking appearance
         </h1>
         <p
-          class="text-base text-text-gray_1 text-center font-medium w-2/3 mx-auto"
+          class="text-base text-text-gray_1 text-center font-medium w-11/12 lg:w-2/3 mx-auto"
         >
           The barn house captivates with its blend of rustic charm and modern
           sophistication, featuring weathered wood, sleek metal accents, and
           large windows that flood the space with natural light.
         </p>
+        <div>
+          <button
+            class="btn px-8 text-text_primary text-xl font-bold bg-secondary rounded-full lg:px-6 lg:py-3"
+          >
+            View Details
+            <i
+              class="fa-solid fa-arrow-right-long bg-primary rounded-full p-1 -rotate-45"
+            ></i>
+          </button>
+        </div>
       </div>
     </header>
     <!-- main section -->
-    <main></main>
+    <main>
+      <!-- About Us Section-->
+      <section class="lg:w-11/12 grid grid-cols-2 bg-">
+        <div class="space-y-5">
+          <button
+            class="btn bg-white px-8 text-text_primary text-xl font-bold bg-secondary rounded-full lg:px-6 lg:py-3"
+          >
+            <i class="fa-solid fa-arrow-right-long"></i>
+            About Us
+          </button>
+          <h2>We design thoughtful, liveable spaces</h2>
+          <p
+            class="text-base text-text-gray_1 text-center font-medium w-11/12 lg:w-2/3"
+          >
+            The barn house captivates with its blend of rustic charm and modern
+            sophistication, featuring weathered wood, sleek metal accents.
+          </p>
+          <!-- card section -->
+          <div class="flex justify-between rounded-lg bg-white w-11/12 h-8">
+            <div><img src="./assets/residential.png" alt="" /></div>
+            <h3>Commercial</h3>
+            <p>
+              The barn house captivates with its blend of rustic charm and
+              modern.
+            </p>
+          </div>
+          <div class="flex justify-between rounded-lg bg-white w-11/12 h-8">
+            <div><img src="./assets/residential.png" alt="" /></div>
+            <h3>Commercial</h3>
+            <p>
+              The barn house captivates with its blend of rustic charm and
+              modern.
+            </p>
+          </div>
+        </div>
+        <!-- Image Section -->
+        <div>
+          <img src="./assets/Rectangle.png" alt="" />
+        </div>
+      </section>
+    </main>
     <!-- Footer Section -->
     <footer></footer>
   </body>
