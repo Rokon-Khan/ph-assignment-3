@@ -270,6 +270,7 @@
       <!-- Our Latest Potfolio -->
 
       <section class="lg:max-w-[1140px] bg-bg_primary mx-auto">
+        <!-- Description Section -->
         <div class="text-center space-y-4 mb-6">
           <button
             class="btn bg-tetiary px-8 text-text_primary text-lg font-bold bg-secondary rounded-full lg:px-6 lg:py-3"
@@ -288,7 +289,7 @@
 
         <!-- Portfolio Grid section -->
 
-        <div class="space-y-6">
+        <div class=" lg:max-w-[1190px] space-y-6">
           <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
             <div
               class="grid lg:grid-cols-subgrid lg:col-span-2 justify-items-center items-center bg-white p-6"
@@ -350,8 +351,88 @@
           </div>
         </div>
       </section>
+      
+      <!-- let's Connect Section -->
+
+      <section class="mb-20">
+
+        <div class="text-center space-y-4 mb-6">
+          <button
+            class="btn bg-tetiary px-8 text-text_primary text-lg font-bold bg-secondary rounded-full lg:px-6 lg:py-3"
+          >
+            <i class="fa-solid fa-arrow-right-long"></i>
+            Let's Connect
+          </button>
+          <h2 class="lg:text-4xl text-text_primary font-bold">
+            Let's Disscus Our Next Project
+          </h2>
+          <p class="w-11/12 lg:max-w-[560px] mx-auto">
+            The barn house captivates with its blend of rustic charm and modern
+            sophistication, featuring weathered wood, sleek metal accents.
+          </p>
+        </div>
+        <!-- form section -->
+
+        <div class="w-11/12  lg:max-w-[570px] mx-auto">
+          <form action="" class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+          
+            <div>
+              <input type="text" placeholder="First Name" class="input mb-4 rounded-[64px] input-bordered w-full max-w-xs" />
+              <input type="text" placeholder="Last Name" class="input mb-4 rounded-[64px] input-bordered w-full max-w-xs" />
+            </div>
+            <div>
+              <input type="text" placeholder="Phone Number" class="input mb-4 rounded-[64px] input-bordered w-full max-w-xs" />
+              <input type="text" placeholder="Email Number" class="input mb-4 rounded-[64px] input-bordered w-full max-w-xs" />
+            </div>
+            <div class="  lg:col-span-2">
+              <textarea class="textarea textarea-bordered w-full " placeholder="Write Your Message Here"></textarea>
+            </div>
+          </form>
+          <div class="lg:col-span-2">
+            <button
+            class="btn w-full bg-primary px-8 text-text_primary text-lg  font-bold bg-secondary rounded-full lg:px-6 lg:py-3"
+          >
+            <i class="fa-solid fa-arrow-right-long"></i>
+            Send Mail
+          </button>
+          </div>
+        </div>
+      </section>
     </main>
+    
     <!-- Footer Section -->
-    <footer></footer>
+    <footer class="footer footer-center bg-text_secondary text-primary-content p-10">
+      <aside>
+        <div class="flex justify-center items-center gap-1">
+          <i
+            class="fa-solid fa-arrow-right-long bg-primary text-body_neutral_2 rounded-full p-1 -rotate-45"
+          ></i>
+          <a class="text-white font-extrabold text-2xl">Rinterio</a>
+        </div>
+        
+        <p>The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+      </aside>
+      <nav>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a>Home</a></li>
+            <li><a>Services</a></li>
+            <li><a>Portfolio</a></li>
+            <li><a>Blogs</a></li>
+            <li><a>Contact us</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div>
+        <a
+          class="btn bg-primary text-lg text-text_secondary rounded-full font-extrabold"
+          ><span>Book Consult</span>
+          <i
+            class="fa-solid fa-arrow-right-long bg-body_neutral_2 text-white rounded-full p-1 -rotate-45"
+          ></i>
+        </a>
+      </div>
+    </footer>          
+    
   </body>
 </html>
